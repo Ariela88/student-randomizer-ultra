@@ -1,3 +1,8 @@
-<div>
-  <app-student-card *ngFor="let student of studentData"  [studentData]="student"></app-student-card>
-</div>
+
+<button (click)="randomize()"> Randomize</button>
+
+<app-student-card class="card-3-cont"
+  *ngFor="let student of mockData"  [studentData]="student">
+</app-student-card>
+
+

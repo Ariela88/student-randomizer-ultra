@@ -7,7 +7,7 @@ import { Student } from 'src/app/model/student';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-  studentList: Student[] = [
+  mockData: Student[] = [
     {
       name: 'damiano',
       surname: 'di lionardo',
@@ -71,4 +71,20 @@ export class MainComponent {
 
   ];
 studentData: any;
+
+randomize(){
+
+  const tempArray = [];
+  const originalLength = this.mockData.length;
+  for (let i = 0; i < originalLength; i++) {
+      
+      const randomIndex = Math.floor(Math.random()*this.mockData.length);
+      const student = this.mockData[randomIndex];
+      tempArray.push(student);
+      this.mockData.splice(randomIndex,1);
+      
+  }
+  this.mockData = tempArray;
+
+}
 }
