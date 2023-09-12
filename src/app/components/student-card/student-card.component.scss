@@ -1,7 +1,20 @@
 .student-card-view{
-    width: 100%;
+    background-color: bisque;
+   
+    display: flex;
+    
+    width: 440px;
+    height: 240px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-ul{
-    width: 30%;
+
+
+img{
+width: 40%;
+    height: 70%;
+    
 }

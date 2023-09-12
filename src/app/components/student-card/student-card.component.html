@@ -1,12 +1,11 @@
 <div class="student-card-view" *ngIf="studentData">
+  <img src="{{studentData.imageUrl}}">
+  <div class="student-data-lis"> 
   <ul>
-    <li>{{studentData.name}} </li>
-    <li>{{studentData.surname}} </li>
-    <li>{{studentData.age}} </li>
-    <img src="{{studentData.imageUrl}}">
+    <li>Nome: {{studentData.name}} </li>
+    <li>Cognome: {{studentData.surname}} </li>
+    <li>Età: {{studentData.age}} </li>
   </ul>
+ 
 </div>
-<!-- <div *ngIf="studentData">
-  <h3>Nome dello studente: {{studentData.name}}</h3>
-  <p>Voto 10</p>
-</div> -->
+</div>

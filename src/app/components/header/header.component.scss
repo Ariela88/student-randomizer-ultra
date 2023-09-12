@@ -1,0 +1,25 @@
+.header{
+    background-color: blueviolet;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 60px;
+    
+}
+
+h1{
+    font-family: 'Victor Mono', monospace;
+   text-transform: uppercase;
+   font-weight: bold;
+   
+    text-align: left;
+    font-size: 50px;
+}
+
+.italic{
+    text-transform: capitalize;
+    font-style:italic;
+}
