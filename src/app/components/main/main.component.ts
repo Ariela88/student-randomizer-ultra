@@ -66,7 +66,7 @@ export class MainComponent {
       name: 'isabella',
       surname: 'ottonello',
       age: 27,
-      imageUrl: 'https://hips.hearstapps.com/hmg-prod/images/gettyimages-607407850-1548682589.jpg'
+      imageUrl: 'https://complessopilotta.it/wp-content/uploads/2022/02/Ritratto-di-gentildonna-Isabella-Gonzaga-principessa-di-Stigliano.jpg'
     },
 
   ];
@@ -77,12 +77,12 @@ randomize(){
   const tempArray = [];
   const originalLength = this.mockData.length;
   for (let i = 0; i < originalLength; i++) {
-      
+
       const randomIndex = Math.floor(Math.random()*this.mockData.length);
       const student = this.mockData[randomIndex];
       tempArray.push(student);
       this.mockData.splice(randomIndex,1);
-      
+
   }
   this.mockData = tempArray;
 

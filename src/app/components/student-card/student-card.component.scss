@@ -1,20 +1,27 @@
 .student-card-view{
     background-color: bisque;
-   
+
     display: flex;
-    
+
     width: 440px;
     height: 240px;
     padding: 20px;
     align-items: center;
     justify-content: center;
-    
+
+
+}
+
+.student-data-lis{
+  text-transform: capitalize;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 36px;
 }
 
 
 
 img{
 width: 40%;
-    height: 70%;
-    
+height: 60%;
+
 }
