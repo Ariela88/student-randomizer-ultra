@@ -72,7 +72,7 @@ export class MainComponent {
   ];
 studentData: any;
 
-randomize(){
+randomize():void{
 
   const tempArray = [];
   const originalLength = this.mockData.length;
