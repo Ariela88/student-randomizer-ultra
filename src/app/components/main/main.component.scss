@@ -1,9 +1,12 @@
-.btn-rand{
+.btn-container{
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: 50px;
     margin-top: 50px;
+    align-items: center;
+    gap: 24px;
 }
 
 button{
@@ -15,7 +18,62 @@ button{
     border: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
+
 }
 
+label{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
 
+input{
+  background-color: purple;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: #ddd;
+  height:30px;
+  width: 250px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #666;
+  height: 38px;
+  opacity: 0.6;
+  width: 20px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: #666;
+  border-radius: 0;
+  border: none;
+  height: 38px;
+  opacity: 0.6;
+  width: 20px;
+}
+input[type="range"]::-moz-range-track {
+  background: #ddd;
+  border: none;
+}
+
+.groups-container{
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.card-container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
