@@ -1,11 +1,13 @@
 <div class="student-card-view" *ngIf="studentData">
+  <div class="divider-card">
   <img src="{{studentData.imageUrl}}">
-  <div class="student-data-lis"> 
+</div>
+  <div class="student-data-lis">
   <ul>
     <li>Nome: {{studentData.name}} </li>
     <li>Cognome: {{studentData.surname}} </li>
     <li>Età: {{studentData.age}} </li>
   </ul>
- 
+
 </div>
 </div>
