@@ -10,14 +10,22 @@
 }
 
 button{
-    width: 160px;
-    height: 40px;
+    width: 200px;
+    height: 52px;
     background-color: purple;
     color: white;
     border-radius: 20px;
     border: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
+    cursor: pointer;
+
+
+}
+
+button:hover{
+  background-color: pink;
+transition-duration: 0.3s;
 
 }
 
@@ -72,7 +80,7 @@ h2{
 
 }
 
-.card-container{
+.main-card-container{
   display: flex;
   gap: 20px;
   justify-content: center;

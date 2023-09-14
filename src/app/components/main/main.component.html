@@ -1,5 +1,5 @@
 <div class="btn-container">
-  <label for="gruppi"> {{groupNumber}} GRUPPI </label>
+  <label for="gruppi"> {{groupNumber}} GRUPP{{groupNumber === 1?'O':'I'}} </label>
   <input [(ngModel)]="groupNumber" type="range" name="gruppi" id="gruppi" min="1" max="10" (ngModelChange)="createGroups()">
   <button (click)="randomize()"> Randomize</button>
 </div>
@@ -7,9 +7,9 @@
 
 <div class="groups-container" *ngFor="let group of groupsArray; let i = index">
  <h2> Gruppo {{i + 1}}: </h2>
- <div class="card-container">
+ <div class="main-card-container">
   <app-student-card class="card-3-cont"
-  *ngFor="let student of group"  [studentData]="student">
+  *ngFor="let student of group"  [studentData]="student" (remove)="removeStudent($event)">
 </app-student-card>
 </div>
 </div>

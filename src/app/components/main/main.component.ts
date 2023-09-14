@@ -1,6 +1,7 @@
 import { group } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { Student } from 'src/app/model/student';
+import { ConnectionService } from 'src/app/service/connection.service';
 import { DataService } from 'src/app/service/data.service';
 
 @Component({
@@ -9,6 +10,8 @@ import { DataService } from 'src/app/service/data.service';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+
+
 
   groupNumber: number = 5;
 
@@ -19,7 +22,7 @@ export class MainComponent implements OnInit {
   studentsData: Student[] = []
 
 
-  constructor(private dataServ:DataService){}
+  constructor(private dataserv:DataService){}
 
 
 
@@ -44,11 +47,8 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
 
-this.dataServ.getStudents().then(students => {
-  this.studentsData = students;
-  this.createGroups()
-})
-
+    this.studentsData = this.dataserv.studentsArray;
+    this.createGroups()
 
 
 
@@ -105,5 +105,17 @@ console.log(this.groupsArray)
 //     }
 
 }
+
+removeStudent(student: Student) {
+
+
+  this.studentsData = this.studentsData.filter(s=>s.id !== student.id)
+
+this.createGroups()
+
+  }
+
+
+
 
 }

@@ -1,13 +1,25 @@
-<div class="student-card-view" *ngIf="studentData">
-  <div class="divider-card">
-  <img src="{{studentData.imageUrl}}">
-</div>
-  <div class="student-data-lis">
-  <ul>
-    <li><span class="info-dati"> Nome:</span> {{studentData.name}} </li>
-    <li><span class="info-dati">Cognome:</span> {{studentData.surname}} </li>
-    <li><span class="info-dati">Età:</span> {{studentData.age}} </li>
-  </ul>
+<div class="card-container" *ngIf="studentData">
+  <div class=" card card-two">
+    <header>
+      <div class="avatar">
+        <img src="{{studentData.imageUrl}}" alt="" />
+      </div>
+    </header>
 
-</div>
+    <h3>{{studentData.name}} {{studentData.surname}}</h3>
+    <div class="desc">
+      Età: {{studentData.age}}
+    </div>
+    <div class="contacts">
+      <button (click)="removeCard()"> Assente </button>
+
+    </div>
+
+    <footer>
+
+
+    </footer>
+  </div>
+
+
 </div>

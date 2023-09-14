@@ -4,16 +4,29 @@ import { Student } from '../model/student';
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class ConnectionService {
 
-  studentsArray: Student[]=[]
+
+
+  getStudents():Promise<Student[]> {
+   return fetch('./assets/student.json').then(res => res.json())
+
+  }
 
   constructor() { }
 
-addStudent(student:Student){
 
-  this.studentsArray.push(student)
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
